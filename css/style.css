@@ -84,3 +84,41 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     z-index: 1;
 }
+
+.info{
+    margin-top: 4%;
+    width: 100%;
+    color: rgb(221, 212, 212);
+    text-align: center;
+}
+
+.info__logo{
+    margin: 0;
+    left: 10%;
+    bottom: -40px;   
+}
+
+.info__fio{
+    padding: 20px;
+    margin-bottom: 30px;
+    margin: 40;
+    top: 50px;
+    left: 150px;
+    line-height: 250%;
+}
+
+.info__education{
+    margin: 0;
+}
+
+.social{
+    font-size: 20px;
+    text-decoration: none;
+    vertical-align: top;
+    margin: 0 30px;
+}
+
+.social img{
+    width: 50px;
+    margin: 0 10px;
+}
