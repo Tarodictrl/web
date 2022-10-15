@@ -3,7 +3,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     color: rgb(189, 182, 182);
-    background: url("/assets/background.jpg");
+    background: url("../assets/background.jpg");
     background-attachment: fixed;
 }
 
