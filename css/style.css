@@ -98,27 +98,15 @@ h1, h2, h3, h4, h5, h6 {
     bottom: -40px;   
 }
 
-.info__fio{
-    padding: 20px;
-    margin-bottom: 30px;
-    margin: 40;
-    top: 50px;
-    left: 150px;
-    line-height: 250%;
+.info__main p{
+    font-size: 17px;
 }
 
-.info__education{
-    margin: 0;
-}
-
-.social{
-    font-size: 20px;
-    text-decoration: none;
-    vertical-align: top;
-    margin: 0 30px;
+.info__main b{
+    color: rgb(116, 192, 53);;
 }
 
 .social img{
-    width: 50px;
+    width: 40px;
     margin: 0 10px;
 }
