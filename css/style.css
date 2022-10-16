@@ -1,36 +1,43 @@
-body{
+body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     color: rgb(189, 182, 182);
-    background: url("../assets/background.jpg");
+    background: url("../assets/background.jpg") center no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     background-attachment: fixed;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
 th {
-border: 1px solid grey;
+    border: 1px solid grey;
 }
 
 td {
-border: 1px solid grey;
+    border: 1px solid grey;
 }
 
-.container{
+.container {
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
 }
 
-.intro{
+.intro {
     width: 100%;
     height: 40vh;
 }
 
-.header{
+.header {
     padding-top: 20px;
     width: 100%;
     top: 0;
@@ -39,18 +46,15 @@ border: 1px solid grey;
     z-index: 1000;
 }
 
-.header__logo{
+.header__logo {
     display: flex;
     cursor: pointer;
     font-size: 30px;
     color: #fff;
 }
 
-@keyframes Animation {
-    from {transform: translateY(10px);}
-}
 
-.header__inner{
+.header__inner {
     font-size: 30px;
     font-weight: 700;
     color: #fff;
@@ -59,12 +63,12 @@ border: 1px solid grey;
     align-items: center;
 }
 
-.nav{
+.nav {
     font-size: 20px;
     text-transform: uppercase;
 }
 
-.nav__link{
+.nav__link {
     display: inline-block;
     vertical-align: top;
     margin: 0 15px;
@@ -74,21 +78,21 @@ border: 1px solid grey;
     transition: color .1s linear;
 }
 
-.nav__link:hover{
-    color:rgb(199, 177, 51);
+.nav__link:hover {
+    color: rgb(199, 177, 51);
 }
 
-.nav__already{
+.nav__already {
     display: inline-block;
     vertical-align: top;
     position: relative;
     margin: 0 15px;
     color: rgb(116, 192, 53);
-    cursor:default;
+    cursor: default;
     animation: Animation 1.5s alternate infinite;
 }
 
-.nav__already:after{
+.nav__already:after {
     content: "";
     display: block;
     width: 100%;
@@ -100,53 +104,55 @@ border: 1px solid grey;
     z-index: 1;
 }
 
-.info{
+.info {
     margin-top: 4%;
     width: 100%;
     color: rgb(221, 212, 212);
     text-align: center;
 }
 
-.info__logo{
+.info__logo {
     margin: 0;
     left: 10%;
-    bottom: -40px;   
+    bottom: -40px;
 }
 
-.info__main p{
+.info__main p {
     font-size: 17px;
 }
 
-.info__main b{
+.info__main b {
+    display: inline-block;
+    text-decoration: none;
     color: rgb(116, 192, 53);
 }
 
-.social img{
-    border-radius: 100px;  
+.social img {
+    border-radius: 100px;
     border: 2px rgb(221, 212, 212) solid;
     width: 40px;
     margin: 0 10px;
 }
 
-.attendance{
+.attendance {
     font-size: 17px;
     margin-top: 3%;
     color: #fff;
     text-align: center;
 }
 
-.attendance thead{
+.attendance thead {
     color: rgb(61, 59, 59);
     background-color: #f2f2f2;
 }
 
-.attendance__table{
+.attendance__table {
     padding: 20px;
     width: 800px;
     margin: auto;
 }
 
-.nav2{
+.nav2 {
     display: inline-block;
     position: relative;
 }
@@ -157,53 +163,48 @@ border: 1px solid grey;
     transition: all .2s ease
 }
 
-.btn:focus+.down-menu {
-    pointer-events: auto;
-    opacity: 1;
-}
-
-.buttons{
+.buttons {
     padding: 3%;
     text-align: center;
 }
 
-.button{
+.button {
     cursor: pointer;
     border-radius: 20px;
     font-size: 20px;
 }
 
-.evalutions{
+.evalutions {
     padding: 2%;
     color: #fff;
     text-align: center;
 }
 
-.evalutions table{
+.evalutions table {
     padding: 20px;
     width: 1000px;
     margin: auto;
 }
 
-.evalutions thead{
+.evalutions thead {
     color: rgb(61, 59, 59);
     background-color: #f2f2f2;
 }
 
-.evalutions tbody{
+.evalutions tbody {
     color: rgb(61, 59, 59);
     background-color: #f2f2f2;
 }
 
-.evalutions_green{
+.evalutions_green {
     background-color: #c4efaa;
 }
 
-.evalutions_red{
+.evalutions_red {
     background-color: #fe9d94;
 }
 
-.about{
+.about {
     padding: 14%;
     display: flex;
     text-align: center;
@@ -212,7 +213,7 @@ border: 1px solid grey;
     flex-wrap: wrap;
 }
 
-.about__buttons{
+.about__buttons {
     width: 400px;
     height: 40px;
     background: rgb(120, 126, 115);
@@ -224,7 +225,7 @@ border: 1px solid grey;
     text-decoration: none;
 }
 
-.other{
+.other {
     width: 100%;
     display: inline-block;
     color: white;
@@ -232,56 +233,60 @@ border: 1px solid grey;
     text-align: center;
 }
 
-.other__center{
+.other__center {
     display: inline-block;
 }
 
-.other__center ly, ul{
+.other__center ly,
+ul {
     text-align: left;
 }
 
-.topbutton{
-    width:200px;
-    border:2px solid #ccc;
-    background:#f7f7f7;
-    text-align:center;
-    padding:10px;
-    position:fixed;
-    bottom:50px;
-    right:50px;
-    cursor:pointer;
-    color:#333;
-    font-family:verdana;
-    font-size:15px;
+.topbutton {
+    width: 200px;
+    border: 2px solid #ccc;
+    background: #f7f7f7;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    color: #333;
+    font-family: verdana;
+    font-size: 15px;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     -khtml-border-radius: 5px;
 }
 
-.bottombutton{
-    width:200px;
-    border:2px solid #ccc;
-    background:#f7f7f7;
-    text-align:center;
-    padding:10px;
-    position:fixed;
-    bottom:50px;
-    left:50px;
-    cursor:pointer;
-    color:#333;
-    font-family:verdana;
-    font-size:15px;
+.bottombutton {
+    width: 200px;
+    border: 2px solid #ccc;
+    background: #f7f7f7;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    cursor: pointer;
+    color: #333;
+    font-family: verdana;
+    font-size: 15px;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     -khtml-border-radius: 5px;
 }
 
-.topbutton:hover, .bottombutton:hover{
+.topbutton:hover,
+.bottombutton:hover {
     background-color: #aeafaa;
 }
 
 @keyframes Animation {
-    from {transform: translateY(5px);}
+    from {
+        transform: translateY(5px);
+    }
 }
