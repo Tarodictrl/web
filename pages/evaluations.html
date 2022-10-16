@@ -10,6 +10,26 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>👨‍💻Evaluations</title>
 </head>
+
+<script type="text/javascript">
+    function DrawTable(semestr){
+        var k = document.getElementById(semestr);
+        if(semestr == "1semester"){
+            document.getElementById("1btn").style.color = "#c4efaa";
+            document.getElementById("2btn").style.color = "#fff";
+            var k2 = document.getElementById("2semester");
+        }
+        else {
+            document.getElementById("2btn").style.color = "#c4efaa";
+            document.getElementById("1btn").style.color = "#fff";
+            var k2 = document.getElementById("1semester");
+        }
+
+        k2.style.display = "none";
+        k.style.display == "none" ? k.style.display = "table" : k.style.display = "table";
+    }
+</script>
+
 <body>
     <header class="header">
         <div class="container">
@@ -23,5 +43,169 @@
             </div>
         </div>
     </header>
+
+    <div class="evalutions">
+        <div id="1btn" onClick="DrawTable('1semester')" class="button" style="color: #c4efaa;">1 семестр</div>
+        <div id="2btn" onClick="DrawTable('2semester')" class="button">2 семестр</div>
+        <table id="1semester" style="display: table">
+            <thead>
+                <tr>
+                    <th rowspan="2">Наименование дисциплины</th>
+                    <th colspan="4">Осенний семестр 2021/2022 у.г.</th>
+                </tr>
+                <tr>
+                    <th>Преподаватель</th>
+                    <th>КТ1</th>
+                    <th>КТ2</th>
+                    <th>ЭС</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ED</td>
+                    <td>Байгулова Т.А.</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">Зачтено</td>
+                </tr>
+                <tr>
+                    <td>ВвП</td>
+                    <td>Хабибулина Н.Ю. <br> Горяинов А.Е.</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">5</td>
+                </tr>
+                <tr>
+                    <td uib-tooltip="Деловые коммуникации">ДК</td>
+                    <td>Захарова Л.Л.</td>
+                    <td class="evalutions_green">4</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">5</td>
+                </tr>
+                <tr>
+                    <td>ИЯ</td>
+                    <td>Войцеховская Н.Ю.</td>
+                    <td class="evalutions_green">4</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">5</td>
+                </tr>
+                <tr>
+                    <td>Информатика</td>
+                    <td>Потапова Е.А.</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">5</td>
+                </tr>
+                <tr>
+                    <td>ИТ</td>
+                    <td>Коцубинский В.П.</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">Зачтено</td>
+                </tr>
+                <tr>
+                    <td>Математика</td>
+                    <td>Васильева О.В. <br> Ромацкий Б.М.</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">Зачтено</td>
+                </tr>
+                <tr>
+                    <td>ОЛЭ</td>
+                    <td>Горяинов А.Е.</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">Зачтено</td>
+                </tr>
+                <tr>
+                    <td>ОПД</td>
+                    <td>Саврук Е.В. <br> Носова А.Л.</td>
+                    <td class="evalutions_green">4</td>
+                    <td class="evalutions_green">4</td>
+                    <td class="evalutions_green">Зачтено</td>
+                </tr>
+                <tr>
+                    <td>ФКиС</td>
+                    <td>Марченко Н.В.</td>
+                    <td class="evalutions_green">4</td>
+                    <td class="evalutions_green">5</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table id="2semester" style="display: none">
+            <thead>
+                <tr>
+                    <th rowspan="2">Наименование дисциплины</th>
+                    <th colspan="4">Весенний семестр 2021/2022 у.г.</th>
+                </tr>
+                <tr>
+                    <th>Преподаватель</th>
+                    <th>КТ1</th>
+                    <th>КТ2</th>
+                    <th>ЭС</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ED</td>
+                    <td>Байгулова Т.А.</td>
+                    <td class="evalutions_red">2</td>
+                    <td class="evalutions_green">4</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ВМ</td>
+                    <td>Черкашин М.В. <br> Кибиткин В.В.</td>
+                    <td class="evalutions_green">4</td>
+                    <td class="evalutions_green">3</td>
+                    <td class="evalutions_green">Зачтено</td>
+                </tr>
+                <tr>
+                    <td>ИЯ</td>
+                    <td>Войцеховская Н.Ю.</td>
+                    <td class="evalutions_green">3</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">4</td>
+                </tr>
+                <tr>
+                    <td>История</td>
+                    <td>Куренков А.В.</td>
+                    <td class="evalutions_green">4</td>
+                    <td class="evalutions_green">4</td>
+                    <td class="evalutions_green">3</td>
+                </tr>
+                <tr>
+                    <td>Математика</td>
+                    <td>Васильева О.В. <br> Ромацкий Б.М.</td>
+                    <td class="evalutions_red">2</td>
+                    <td class="evalutions_green">3</td>
+                    <td class="evalutions_green">4</td>
+                </tr>
+                <tr>
+                    <td>ОПД</td>
+                    <td>Афанасьева И.Г. <br> Лариошина И.А.</td>
+                    <td class="evalutions_green">3</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">4</td>
+                </tr>
+                <tr>
+                    <td>Программирование</td>
+                    <td>Горяинов А.Е.</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">5</td>
+                </tr>
+                <tr>
+                    <td>ФКиС</td>
+                    <td>Марченко Н.В.</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">5</td>
+                    <td class="evalutions_green">Зачтено</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

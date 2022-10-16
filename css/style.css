@@ -11,10 +11,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-table {
-    border: 1px solid grey;
-}
-
 th {
 border: 1px solid grey;
 }
@@ -84,6 +80,7 @@ border: 1px solid grey;
     position: relative;
     margin: 0 15px;
     color: rgb(116, 192, 53);
+    cursor:default;
 }
 
 .nav__already:after{
@@ -128,12 +125,75 @@ border: 1px solid grey;
 
 .attendance{
     font-size: 17px;
-    margin-top: 1.2%;
+    margin-top: 3%;
     color: #fff;
     text-align: center;
 }
 
-.table{
-    width: 300px;
+.attendance thead{
+    color: rgb(61, 59, 59);
+    background-color: #f2f2f2;
+}
+
+.attendance__table{
+    padding: 20px;
+    width: 800px;
     margin: auto;
+}
+
+.nav2{
+    display: inline-block;
+    position: relative;
+}
+
+.down-menu {
+    opacity: 0;
+    pointer-events: none;
+    transition: all .2s ease
+}
+
+.btn:focus+.down-menu {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.buttons{
+    padding: 3%;
+    text-align: center;
+}
+
+.button{
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.evalutions{
+    padding: 2%;
+    color: #fff;
+    text-align: center;
+}
+
+.evalutions table{
+    padding: 20px;
+    width: 1000px;
+    margin: auto;
+}
+
+.evalutions thead{
+    color: rgb(61, 59, 59);
+    background-color: #f2f2f2;
+}
+
+.evalutions tbody{
+    color: rgb(61, 59, 59);
+    background-color: #f2f2f2;
+}
+
+.evalutions_green{
+    background-color: #c4efaa;
+}
+
+.evalutions_red{
+    background-color: #fe9d94;
 }
