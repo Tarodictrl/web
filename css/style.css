@@ -11,6 +11,18 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+table {
+    border: 1px solid grey;
+}
+
+th {
+border: 1px solid grey;
+}
+
+td {
+border: 1px solid grey;
+}
+
 .container{
     margin: 0 auto;
     width: 100%;
@@ -32,8 +44,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__logo{
+    cursor: pointer;
     font-size: 30px;
-    color: rgb(221, 212, 212);
+    color: #fff;
 }
 
 
@@ -107,6 +120,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social img{
+    border-radius: 100px;  
+    border: 2px rgb(221, 212, 212) solid;
     width: 40px;
     margin: 0 10px;
+}
+
+.attendance{
+    font-size: 17px;
+    margin-top: 1.2%;
+    color: #fff;
+    text-align: center;
+}
+
+.table{
+    width: 300px;
+    margin: auto;
 }
