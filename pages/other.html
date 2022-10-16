@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>👨‍💻Other</title>
+</head>
+<script type="text/javascript">
+    function GoBottom() {
+        $('#scroll_bottom').click(function () {
+            $('html, body').animate({ scrollTop: $(document).height() - $(window).height() }, 600);
+            return false;
+        });
+    };
+</script>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo" onclick="window.location='../index.html';"> DeTTeR</div>
+                <nav class="nav">
+                    <a class="nav__link" href="../pages/about.html">About</a>
+                    <a class="nav__link" href="../pages/attendance.html">Attendance</a>
+                    <a class="nav__link" href="../pages/evaluations.html">Evaluations</a>
+                    <a class="nav__already">Other</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="other">
+        <h1>Заголовок h1</h1>
+        <h2>Заголовок h2</h2>
+        <h3>Заголовок h3</h3>
+        <h4>Заголовок h4</h4>
+        <h5>Заголовок h5</h5>
+        <h6>Заголовок h6</h6>
+        <br>
+        <i>Курсив</i>
+        <br>
+        <b>Жирный</b>
+        <br>
+        <u>Подчеркнутый</u>
+        <br>
+        <p>Абзац
+            <br>
+            ↑ Разрыв строки
+        </p>
+        <h2>Нумерованные списки</h2>
+        <ol class="other__center">
+            <li>элемент 1</li>
+            <li>элемент 2</li>
+            <li>элемент 3</li>
+        </ol>
+        <br>
+        <h2>Маркированные списки</h2>
+        <ul class="other__center">
+            <li>элемент 1</li>
+            <li>элемент 2</li>
+            <li>элемент 3</li>
+        </ul>
+        <h2>Список определений</h2>
+        <dl class="other__center">
+            <dt>Кофе</dt>
+            <dd>Горячий темный напиток</dd>
+            <dt>Молоко</dt>
+            <dd>Белый охлажденный напиток</dd>
+        </dl>
+        <h2>Вложенные списки</h2>
+        <ul class="other__center">
+            <li> Понедельник
+                <ol>
+                    <li>Отправить почту</li>
+                    <li>Визит к редактору
+                        <ul>
+                            <li>Выбор темы</li>
+                            <li>Дкаративное оформление</li>
+                            <li>Заключительный отчет</li>
+                        </ul>
+                    </li>
+        </ul>
+        <br>
+    </div>
+    <div id="scroll_bottom" class="bottombutton" onClick="window.scrollTo(0,document.body.scrollHeight);">↓ Вниз</div>
+    <div id="scroll_bottom" class="topbutton" onClick="window.scrollTo(document.body.scrollHeight, 0);">↑ Вверх</div>
+</body>
+
+</html>

@@ -40,11 +40,15 @@ border: 1px solid grey;
 }
 
 .header__logo{
+    display: flex;
     cursor: pointer;
     font-size: 30px;
     color: #fff;
 }
 
+@keyframes Animation {
+    from {transform: translateY(10px);}
+}
 
 .header__inner{
     font-size: 30px;
@@ -81,6 +85,7 @@ border: 1px solid grey;
     margin: 0 15px;
     color: rgb(116, 192, 53);
     cursor:default;
+    animation: Animation 1.5s alternate infinite;
 }
 
 .nav__already:after{
@@ -196,4 +201,87 @@ border: 1px solid grey;
 
 .evalutions_red{
     background-color: #fe9d94;
+}
+
+.about{
+    padding: 14%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.about__buttons{
+    width: 400px;
+    height: 40px;
+    background: rgb(120, 126, 115);
+    border-radius: 10px;
+    font-size: 30px;
+    margin: 10px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+.other{
+    width: 100%;
+    display: inline-block;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.other__center{
+    display: inline-block;
+}
+
+.other__center ly, ul{
+    text-align: left;
+}
+
+.topbutton{
+    width:200px;
+    border:2px solid #ccc;
+    background:#f7f7f7;
+    text-align:center;
+    padding:10px;
+    position:fixed;
+    bottom:50px;
+    right:50px;
+    cursor:pointer;
+    color:#333;
+    font-family:verdana;
+    font-size:15px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+
+.bottombutton{
+    width:200px;
+    border:2px solid #ccc;
+    background:#f7f7f7;
+    text-align:center;
+    padding:10px;
+    position:fixed;
+    bottom:50px;
+    left:50px;
+    cursor:pointer;
+    color:#333;
+    font-family:verdana;
+    font-size:15px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+
+.topbutton:hover, .bottombutton:hover{
+    background-color: #aeafaa;
+}
+
+@keyframes Animation {
+    from {transform: translateY(5px);}
 }
