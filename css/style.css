@@ -2,10 +2,8 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    color: rgb(189, 182, 182);
+    color: #fff;
     background: url("../assets/background.jpg") center no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
     background-attachment: fixed;
 }
 
@@ -146,8 +144,9 @@ td {
 }
 
 .attendance__table {
-    padding: 20px;
-    width: 800px;
+
+    width: 100%;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -179,9 +178,9 @@ td {
     text-align: center;
 }
 
-.evalutions table {
-    padding: 20px;
-    width: 1000px;
+.evalutions__table {
+    width: 100%;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -213,9 +212,11 @@ td {
 }
 
 .about__buttons {
-    width: 400px;
-    height: 40px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     background-color: rgb(112, 99, 133);
+    border: 3px solid #fff;
     border-radius: 10px;
     font-size: 30px;
     margin: 10px;
@@ -242,7 +243,8 @@ ul {
 }
 
 .topbutton {
-    width: 200px;
+    width: auto;
+    max-width: 200px;
     border: 2px solid #ccc;
     background: #f7f7f7;
     text-align: center;
@@ -262,7 +264,9 @@ ul {
 }
 
 .bottombutton {
-    width: 200px;
+    visibility: visible;
+    width: auto;
+    max-width: 200px;
     border: 2px solid #ccc;
     background: #f7f7f7;
     color: #fff;
@@ -300,7 +304,8 @@ ul {
     margin-top: 20px;
     background-color: rgb(112, 99, 133);
     height: auto;
-    width: 500px;
+    width: 100%;
+    max-width: 400px;
     text-align: center;
     border: 10px solid white;
     border-radius: 80px;
@@ -325,9 +330,120 @@ ul {
     animation: AnimationX 0.8s alternate infinite;
 }
 
+.hobbies {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.anime {
+    margin: 0 auto;
+    width: auto;
+    max-width: 1200px;
+    height: 300px;
+    color: #fff;
+    font-size: 20px;
+}
+
+#hobbies_anime img {
+    height: 400px;
+    width: 300px;
+}
+
+#hobbies_manga img {
+    display: inline-block;
+    height: 400px;
+    width: 300px;
+}
+
+#hobbies_games img {
+    height: 400px;
+    width: 300px;
+}
+
+.hobbies {
+    font-size: 30px;
+}
+
+.hobbies__button {
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: rgb(112, 99, 133);
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 80px;
+    font-size: 20px;
+}
+
+.hobbies__button:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width:200px) and (max-width:700px) {
+    body {
+        font-size: 10px;
+    }
+
+    .header__logo {
+        font-size: 30px;
+    }
+
+    .nav__link,
+    .nav__already,
+    .evalutions div{
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .bottombutton {
+        visibility: hidden;
+    }
+
+    .topbutton {
+        visibility: hidden;
+    }
+
+    .header__inner {
+        flex-direction: column;
+    }
+
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav__link {
+        padding-top: 10px;
+    }
+
+    .nav__already {
+        padding-top: 10px;
+    }
+
+    .evalutions__table {
+        font-size: 10px;
+    }
+
+    .friend__person{
+        width: 300px;
+        font-size: 15px;
+    }
+    
+    .friend__person img{
+        width: 60px;
+        height: 60px;
+    }
+}
+
 @keyframes AnimationY {
     from {
-        transform: translateY(5px);
+        transform: translateY(-2px);
+    }
+
+    to {
+        transform: translateY(2px);
     }
 }
 
@@ -335,6 +451,7 @@ ul {
     from {
         transform: translateX(-20px);
     }
+
     to {
         transform: translateX(20px);
     }

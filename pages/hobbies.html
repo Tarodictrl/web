@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>👨‍💻Hobbies</title>
+</head>
+
+<script type="text/javascript">
+    function DrawAnime() {
+        var anime = document.getElementById("hobbies_anime");
+        anime.style.display = "block";
+        document.getElementById("hobbies__buttons").style.display = "none";
+        document.getElementById("back").style.display = "block";
+    }
+    function DrawGames() {
+        var game = document.getElementById("hobbies_games");
+        game.style.display = "block";
+        document.getElementById("hobbies__buttons").style.display = "none";
+        document.getElementById("back").style.display = "block";
+    }
+    function DrawManga() {
+        var manga = document.getElementById("hobbies_manga");
+        manga.style.display = "block";
+        document.getElementById("hobbies__buttons").style.display = "none";
+        document.getElementById("back").style.display = "block";
+    }
+    function Back() {
+        document.getElementById("hobbies_anime").style.display = "none";
+        document.getElementById("hobbies_manga").style.display = "none";
+        document.getElementById("hobbies_games").style.display = "none";
+
+        document.getElementById("hobbies__buttons").style.display = "block";
+        document.getElementById("back").style.display = "none";
+    }
+</script>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo" onclick="window.location='../index.html';"> DeTTeR</div>
+                <nav class="nav">
+                    <a class="nav__link" href="../pages/about.html">About</a>
+                    <a class="nav__link" href="../pages/attendance.html">Attendance</a>
+                    <a class="nav__link" href="../pages/evaluations.html">Evaluations</a>
+                    <a class="nav__link" href="../pages/other.html">Other</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="hobbies">
+        <div id="hobbies__buttons">
+            <div id="anime" onClick="DrawAnime()" class="hobbies__button">Аниме</div>
+            <div id="manga" onClick="DrawManga()" class="hobbies__button">Манга</div>
+            <div id="games" onClick="DrawGames()" class="hobbies__button">Игры</div>
+        </div>
+        <div id="hobbies_anime" style="display: none;">
+            <p>
+                Постеры аниме
+                <br>
+                <br>
+                <img src="../assets/anime/cyberpunk.jpeg">
+                <img src="../assets/anime/YofukashiNoUta.jpeg">
+                <img src="../assets/anime/jojo.jpg">
+                <img src="../assets/anime/initiald.jpeg">
+            </p>
+        </div>
+        <div id="hobbies_manga" style="display: none;">
+            <p>
+                Постеры манги
+                <br>
+                <br>
+                <img src="../assets/manga/boruto.jpg">
+                <img src="../assets/manga/YofukashiNoUta.jpg">
+            </p>
+        </div>
+        <div id="hobbies_games" style="display: none;">
+            <p>
+                Постеры игры
+                <br>
+                <br>
+                <img src="../assets/games/csgo.jpg">
+                <img src="../assets/games/dota.jpeg">
+                <img src="../assets/games/genshin.jpg">
+            </p>
+        </div>
+        <div id="back" onClick="Back()" style="display: none;" class="hobbies__button">Назад</div>
+    </div>
+</body>
+
+</html>
