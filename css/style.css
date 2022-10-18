@@ -392,7 +392,7 @@ ul {
 
     .nav__link,
     .nav__already,
-    .evalutions div{
+    .evalutions div {
         margin-bottom: 10px;
         font-size: 15px;
     }
@@ -426,14 +426,19 @@ ul {
         font-size: 10px;
     }
 
-    .friend__person{
+    .friend__person {
         width: 300px;
         font-size: 15px;
     }
-    
-    .friend__person img{
+
+    .friend__person img {
         width: 60px;
         height: 60px;
+    }
+
+    .attendance__table{
+        width: 300px;
+        font-size: 13px;
     }
 }
 
