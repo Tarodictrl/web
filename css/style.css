@@ -131,7 +131,7 @@ td {
     margin: 0 10px;
 }
 
-.social img:hover{
+.social img:hover {
     border: 3px rgb(221, 212, 212) solid;
     width: 50px;
     height: 50px;
@@ -231,7 +231,7 @@ td {
     text-decoration: none;
 }
 
-.about__buttons:hover{
+.about__buttons:hover {
     color: rgb(70, 70, 70);
     background-color: #c4efaa;
 }
