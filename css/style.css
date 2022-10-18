@@ -131,6 +131,12 @@ td {
     margin: 0 10px;
 }
 
+.social img:hover{
+    border: 3px rgb(221, 212, 212) solid;
+    width: 50px;
+    height: 50px;
+}
+
 .attendance {
     font-size: 17px;
     margin-top: 3%;
@@ -140,11 +146,11 @@ td {
 
 .attendance thead {
     color: rgb(61, 59, 59);
-    background-color: #f2f2f2;
 }
 
 .attendance__table {
-
+    background-color: #cac7c7;
+    color: rgb(61, 59, 59);
     width: 100%;
     max-width: 800px;
     margin: auto;
@@ -158,7 +164,7 @@ td {
 .down-menu {
     opacity: 0;
     pointer-events: none;
-    transition: all .2s ease
+    transition: all .2s ease;
 }
 
 .buttons {
@@ -186,12 +192,12 @@ td {
 
 .evalutions thead {
     color: rgb(61, 59, 59);
-    background-color: #f2f2f2;
+    background-color: #cac7c7;
 }
 
 .evalutions tbody {
     color: rgb(61, 59, 59);
-    background-color: #f2f2f2;
+    background-color: #cac7c7;
 }
 
 .evalutions_green {
@@ -203,7 +209,7 @@ td {
 }
 
 .about {
-    padding: 14%;
+    margin-top: 10%;
     display: flex;
     text-align: center;
     align-items: center;
@@ -223,6 +229,11 @@ td {
     position: relative;
     color: #fff;
     text-decoration: none;
+}
+
+.about__buttons:hover{
+    color: rgb(70, 70, 70);
+    background-color: #c4efaa;
 }
 
 .other {
@@ -325,14 +336,10 @@ ul {
 }
 
 .friend__person:hover {
+    transition: 0.5s;
     background-color: rgb(116, 192, 53);
     cursor: pointer;
     animation: AnimationX 0.8s alternate infinite;
-}
-
-.hobbies {
-    margin-top: 100px;
-    text-align: center;
 }
 
 .anime {
@@ -361,24 +368,29 @@ ul {
 }
 
 .hobbies {
+    margin-top: 10%;
+    text-align: center;
     font-size: 30px;
 }
 
 .hobbies__button {
-    margin: 0 auto;
-    margin-top: 20px;
-    background-color: rgb(112, 99, 133);
-    height: auto;
     width: 100%;
     max-width: 400px;
-    text-align: center;
-    border: 2px solid white;
-    border-radius: 80px;
-    font-size: 20px;
+    height: auto;
+    background-color: rgb(112, 99, 133);
+    border: 3px solid #fff;
+    border-radius: 10px;
+    font-size: 30px;
+    margin: 15px auto;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
 }
 
 .hobbies__button:hover {
     cursor: pointer;
+    color: rgb(70, 70, 70);
+    background-color: #c4efaa;
 }
 
 @media screen and (min-width:200px) and (max-width:700px) {
@@ -436,7 +448,7 @@ ul {
         height: 60px;
     }
 
-    .attendance__table{
+    .attendance__table {
         width: 300px;
         font-size: 13px;
     }
