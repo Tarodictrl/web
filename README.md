@@ -1,1 +1,1 @@
-Site - https://tarodictrl.github.io/web/index.html
+Site - https://detter.ru/index.html
