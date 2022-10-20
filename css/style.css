@@ -40,13 +40,16 @@ td {
 }
 
 .header {
+    position: fixed;
+    padding-bottom: 100px;
     padding-top: 20px;
-    width: 100%;
+    box-sizing: border-box;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
     padding-bottom: 10px;
+    background-color: hsl(220deg 9% 14%);
     border-bottom: 1px rgb(78, 76, 76) solid;
 }
 
@@ -107,6 +110,12 @@ td {
     z-index: 1;
 }
 
+.main{
+    display: block;
+    padding: 0 20px;
+    margin-top: 100px;
+}
+
 .info {
     margin: 0 auto;
     margin-top: 4%;
@@ -139,9 +148,15 @@ td {
 
 .social img {
     border-radius: 100px;
-    border: 2px rgb(221, 212, 212) solid;
+    border: 2px rgb(221, 212, 212) dashed;
     width: 40px;
     margin: 0 10px;
+    transition: .2s;
+}
+
+.social img:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1.2);
 }
 
 .attendance {
@@ -267,7 +282,6 @@ td {
 }
 
 .other {
-    margin-top: 20px;
     width: 100%;
     display: inline-block;
     color: white;
