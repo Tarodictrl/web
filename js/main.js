@@ -51,6 +51,13 @@ function Back() {
     document.getElementById("back").style.display = "none";
 }
 
+function GoBottom() {
+    $('#scroll_bottom').click(function () {
+        $('html, body').animate({ scrollTop: $(document).height() - $(window).height() }, 600);
+        return false;
+    });
+};
+
 function ChangeTheme() {
     var link = document.getElementById("theme-link");
 
