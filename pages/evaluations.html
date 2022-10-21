@@ -9,28 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/light.css" id="theme-link">
     <link rel="icon" href="../assets/logo.ico">
     <title>Evaluations</title>
 </head>
 
-<script type="text/javascript">
-    function DrawTable(semestr) {
-        var k = document.getElementById(semestr);
-        if (semestr == "1semester") {
-            document.getElementById("1btn").style.color = "rgb(129, 187, 255)";
-            document.getElementById("2btn").style.color = "#fff";
-            var k2 = document.getElementById("2semester");
-        }
-        else {
-            document.getElementById("2btn").style.color = "rgb(129, 187, 255)";
-            document.getElementById("1btn").style.color = "#fff";
-            var k2 = document.getElementById("1semester");
-        }
-
-        k2.style.display = "none";
-        k.style.display == "none" ? k.style.display = "table" : k.style.display = "table";
-    }
-</script>
+<script src="../js/main.js"></script>
 
 <body>
     <header class="header">
@@ -50,9 +34,8 @@
         <div class="evalutions">
             <h2>Успеваемость</h2>
             <br>
-            <div id="1btn" onClick="DrawTable('1semester')" class="button" style="color: rgb(129 187 255);">1 семестр
-            </div>
-            <div id="2btn" onClick="DrawTable('2semester')" class="button">2 семестр</div>
+            <div id="btn1" onClick="DrawTable('1semester')" class="button">1 семестр</div>
+            <div id="btn2" onClick="DrawTable('2semester')" class="button">2 семестр</div>
             <br>
             <table id="1semester" style="display: table" class="evalutions__table">
                 <thead>
