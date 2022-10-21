@@ -10,6 +10,7 @@ td {
 
 .header {
     color: hsl(220deg 9% 14%);
+    background-color: hsl(220deg 9% 14%);
     border-bottom: 1px rgb(78, 76, 76) solid;
 }
 
@@ -94,11 +95,11 @@ td {
     background-color: #fe9d94;
 }
 
-#1btn{
+#btn1{
     color: rgb(129 187 255);
 }
 
-#2btn{
+#btn2{
     color: #fff;
 }
 

@@ -1,19 +1,20 @@
+
+function EditColorButton(btn1, btn2) {
+    btn2.style.color = "rgb(129, 187, 255)";
+    btn1.style.color = "#fff";
+}
+
 function DrawTable(semestr) {
     var k = document.getElementById(semestr);
     var btn1 = document.getElementById("btn1");
     var btn2 = document.getElementById("btn2");
     if (semestr == "1semester") {
-        var color1 = window.getComputedStyle(btn1).color;
-        var color2 = window.getComputedStyle(btn2).color;
-        btn2.style.color = color1;
-        btn1.style.color = color2;
+
+        EditColorButton(btn2, btn1)
         var k2 = document.getElementById("2semester");
     }
     else {
-        var color1 = window.getComputedStyle(btn1).color;
-        var color2 = window.getComputedStyle(btn2).color;
-        btn2.style.color = color1;
-        btn1.style.color = color2;
+        EditColorButton(btn1, btn2);
         var k2 = document.getElementById("1semester");
     }
 
@@ -57,23 +58,3 @@ function GoBottom() {
         return false;
     });
 };
-
-function ChangeTheme() {
-    var link = document.getElementById("theme-link");
-
-    let lightTheme = "../css/light.css";
-    let darkTheme = "../css/dark.css";
-
-    var currTheme = link.getAttribute("href");
-
-    if (currTheme == lightTheme) {
-        document.getElementById("theme__img").src = "../assets/theme/sun.png"
-        currTheme = darkTheme;
-    }
-    else {
-        document.getElementById("theme__img").src = "../assets/theme/moon.png"
-        currTheme = lightTheme;
-    }
-
-    link.setAttribute("href", currTheme);
-}
