@@ -87,7 +87,7 @@ h6 {
     z-index: 1;
 }
 
-.theme-button{
+.theme-button {
     cursor: pointer;
 }
 
@@ -115,8 +115,8 @@ h6 {
     bottom: -40px;
 }
 
-.info__logo img{
-    border-radius: 100px;  
+.info__logo img {
+    border-radius: 100px;
     border: 3px solid;
 }
 
@@ -139,51 +139,6 @@ h6 {
 .social img:hover {
     -webkit-transform: scale(1);
     transform: scale(1.2);
-}
-
-.attendance {
-    width: auto;
-    max-width: 900px;
-    margin: 0 auto;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    border-radius: 50px;
-    font-size: 17px;
-    margin-top: 3%;
-    text-align: center;
-}
-
-.attendance__table {
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-}
-
-.buttons {
-    padding: 3%;
-    text-align: center;
-}
-
-.button {
-    cursor: pointer;
-    border-radius: 20px;
-    font-size: 20px;
-}
-
-.evalutions {
-    width: auto;
-    max-width: 900px;
-    margin: 2% auto;
-    padding: 20px;
-    border-radius: 50px;
-    text-align: center;
-    box-shadow: 0px 0px 10px;
-}
-
-.evalutions__table {
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
 }
 
 .about {
@@ -219,71 +174,15 @@ h6 {
     position: relative;
 }
 
-.about__buttons::before{
+.about__buttons::before {
     position: absolute;
     left: -40px;
     content: "->";
     color: transparent;
 }
 
-.about__buttons:hover::before{
+.about__buttons:hover::before {
     color: rgb(129 187 255);
-}
-
-
-.other {
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-}
-
-.other table{
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
-
-.other__center {
-    display: inline-block;
-}
-
-.other__center ly,
-ul {
-    text-align: left;
-}
-
-.topbutton {
-    width: auto;
-    max-width: 200px;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    cursor: pointer;
-    font-family: verdana;
-    font-size: 15px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -khtml-border-radius: 5px;
-}
-
-.bottombutton {
-    visibility: visible;
-    width: auto;
-    max-width: 200px;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 50px;
-    left: 50px;
-    cursor: pointer;
-    font-family: verdana;
-    font-size: 15px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -khtml-border-radius: 5px;
 }
 
 .friends {
@@ -328,18 +227,33 @@ ul {
     animation: AnimationX 0.8s alternate infinite;
 }
 
+.hobbies {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.hobbies__button {
+    width: auto;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    font-size: 30px;
+    margin: 15px auto;
+    position: relative;
+    text-decoration: none;
+}
+
+.hobbies__button:hover {
+    cursor: pointer;
+}
+
 .anime {
     margin: 0 auto;
     width: auto;
     max-width: 1200px;
     height: 300px;
     font-size: 20px;
-}
-
-.hobbies {
-    padding: 20px;
-    text-align: center;
-    font-size: 30px;
 }
 
 #hobbies_anime img {
@@ -369,19 +283,88 @@ ul {
     box-shadow: 0px 0px 10px;
 }
 
-.hobbies__button {
+.attendance {
     width: auto;
-    max-width: 400px;
-    height: auto;
-    border-radius: 10px;
-    font-size: 30px;
-    margin: 15px auto;
-    position: relative;
-    text-decoration: none;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 50px;
+    font-size: 17px;
+    margin-top: 3%;
+    text-align: center;
 }
 
-.hobbies__button:hover {
+.attendance__table {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.evalutions {
+    width: auto;
+    max-width: 900px;
+    margin: 2% auto;
+    padding: 20px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0px 0px 10px;
+}
+
+.evalutions__table {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.button {
     cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.other {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.other table {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.other__center {
+    display: inline-block;
+}
+
+.other__center ly,
+ul {
+    text-align: left;
+}
+
+.topbutton,
+.bottombutton {
+    width: auto;
+    max-width: 200px;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+
+.bottombutton {
+    left: 50px;
+}
+
+.topbutton {
+    right: 50px;
 }
 
 @media screen and (min-width:200px) and (max-width:700px) {
