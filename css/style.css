@@ -237,6 +237,11 @@ h6 {
     text-align: center;
 }
 
+.other table{
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
 .other__center {
     display: inline-block;
 }

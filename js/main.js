@@ -1,7 +1,7 @@
 
 function EditColorButton(btn1, btn2) {
-    btn2.style.color = "rgb(129, 187, 255)";
     btn1.style.color = "#fff";
+    btn2.style.color = "rgb(129, 187, 255)";
 }
 
 function DrawTable(semestr) {
@@ -9,7 +9,6 @@ function DrawTable(semestr) {
     var btn1 = document.getElementById("btn1");
     var btn2 = document.getElementById("btn2");
     if (semestr == "1semester") {
-
         EditColorButton(btn2, btn1)
         var k2 = document.getElementById("2semester");
     }
