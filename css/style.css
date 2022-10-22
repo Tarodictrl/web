@@ -210,12 +210,26 @@ h6 {
     margin: 10px;
     position: relative;
     text-decoration: none;
+    transition: .5s;
 }
 
 .about__buttons:hover {
-    transition: 0.2s;
-    animation: AnimationX 2s alternate infinite;
+    margin-left: 50px;
+    outline: none;
+    position: relative;
 }
+
+.about__buttons::before{
+    position: absolute;
+    left: -40px;
+    content: "->";
+    color: transparent;
+}
+
+.about__buttons:hover::before{
+    color: rgb(129 187 255);
+}
+
 
 .other {
     width: 100%;
