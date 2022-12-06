@@ -42,6 +42,10 @@ td {
     color: rgb(129 187 255);
 }
 
+#id_clock {
+    color: rgb(129 187 255);
+}
+
 .info {
     color: rgb(221, 212, 212);
     background-color: hsl(220deg 9% 19%);
@@ -178,4 +182,8 @@ td {
 .hobbies__button:hover {
     color: rgb(70, 70, 70);
     background-color: rgb(129 187 255);
+}
+
+#id_time_from_beginning_month {
+    color: rgb(129 187 255);
 }

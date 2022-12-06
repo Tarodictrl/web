@@ -15,18 +15,23 @@
 </head>
 
 <script src="../js/main.js"></script>
+<script src="../js/clock.js"></script>
 
 <body>
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <div class="header__logo" onclick="window.location='../index.html';"> DeTTeR</div>
+                <div class="header__logo nav__logo" onclick="window.location='../index.html';"> DeTTeR</div>
                 <nav class="nav">
-                    <a class="nav__link" href="../pages/about.html">About</a>
-                    <a class="nav__already">Attendance</a>
-                    <a class="nav__link" href="../pages/evaluations.html">Evaluations</a>
-                    <a class="nav__link" href="../pages/other.html">Other</a>
+                    <a class="nav__link" href="about.html">Обо мне</a>
+                    <a class="nav__already">Посещаемость</a>
+                    <a class="nav__link" href="evaluations.html">Оценки</a>
+                    <a class="nav__link" href="other.html">Другое</a>
+                    <a class="nav__link" href="magic.html">Фокусы</a>
                 </nav>
+                <div id="id_clock">
+                    <script>digitalClock();</script>
+                </div>
             </div>
         </div>
     </header>

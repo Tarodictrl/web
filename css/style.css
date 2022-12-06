@@ -87,6 +87,12 @@ h6 {
     z-index: 1;
 }
 
+#id_clock {
+    position: absolute;
+    font-size: 23px;
+    right: 50px
+}
+
 .theme-button {
     cursor: pointer;
 }
@@ -468,4 +474,30 @@ ul {
     to {
         transform: translateX(-20px);
     }
+}
+
+#id_time_from_beginning_month {
+    width: auto;
+    text-align: center;
+    right: 50px;
+    padding: 10px;
+    position: fixed;
+    bottom: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.magic_img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0 0 -125px;
+}
+
+.magic_img img{
+    width: 400px;
+    border: 5px solid #fff;
 }

@@ -57,3 +57,22 @@ function GoBottom() {
         return false;
     });
 };
+
+function SumOfSquares() {
+    var ar = Array.from({ length: 10 }, () => Math.floor(Math.random() * 40));
+    var sum = 0;
+    for (var i = 0; i < ar.length; i++) {
+        sum += ar[i] * ar[i];
+    }
+    console.log("Sum of squares: " + sum);
+}
+
+function ChangeColorOnMouseOver() {
+    var clock = document.getElementById("id_clock");
+    clock.onmouseenter = function () {
+        document.body.style.background = "rgb(61, 59, 59)";
+    }
+    clock.onmouseleave = function () {
+        document.body.style.background = "hsl(220deg 9% 14%)";
+    }
+}
