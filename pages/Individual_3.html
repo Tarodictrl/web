@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+<script>
+    $(document).ready(function () {
+        $("img").each(function () {
+            $(this).css("display", "none");
+        });
+        $("#button1").click(function () {
+            var count = 0;
+            $("img").each(function () {
+                count++;
+                if (count == 2) {
+                    $(this).fadeIn(2000);
+                    $(this).fadeOut(2000);
+                }
+                else {
+                    $(this).css("display", "inline");
+                }
+            });
+        });
+        $("#button2").click(function () {
+            $("img").each(function () {
+                $(this).css("display", "inline");
+            });
+        });
+    });
+</script>
+
+<body>
+    <div class="magic__imgs">
+        <img src="../assets/pudge.gif" alt="pudge">
+        <img src="../assets/marce.gif" alt="pudge">
+    </div>
+    <div>
+        <button id="button1">Click me</button>
+        <button id="button2">Click me</button>
+    </div>
+</body>
+
+</html>
+
+<!-- 3 вариант -->

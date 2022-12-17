@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                $("button").click(function (){
+                    var links = $("p");
+                    links.each(function (i, a) {
+                        if (i==2 || i==4)
+                        {
+                            $(links[i]).css('text-indent', '100px');
+                        }
+                    });
+                });
+                $("img").click(function (){
+                    var value = parseInt($(this).css("margin-top")) + 30;
+                    $(this).css("margin-top", value + "px")
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button>Click me</button>
+        <p>This is a paragraph 1</p>
+        <img src="../assets/Emoticon_dac15_cool.gif" alt="">
+        <p>This is a paragraph 2</p>
+        <img src="../assets/Emoticon_dac15_cool.gif" alt="">
+        <p>This is a paragraph 3</p>
+        <img src="../assets/Emoticon_dac15_cool.gif" alt="">
+        <p>This is a paragraph 4</p>
+        <img src="../assets/Emoticon_dac15_cool.gif" alt="">
+        <p>This is a paragraph 5</p>
+        <img src="../assets/Emoticon_dac15_cool.gif" alt="">
+    </body>
+</html>
+
+<!-- 3 вариант -->

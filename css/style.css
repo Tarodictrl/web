@@ -1,18 +1,15 @@
-#fields {
-    float: left;
+
+
+.novigation_button {
+    display: inline-block;
+    margin-top: 10px;
 }
 
-#fields label {
-    float: left;
-    padding-right: 10px;
+.novigation_button input {
+    width: 200px;
+    height: 100px;
 }
 
-#fields div {
-    clear: both;
-    text-align: right;
-    line-height: 25px;
-}
-
-span {
-    color: red;
+.magic__imgs img{
+    width: 500px;
 }

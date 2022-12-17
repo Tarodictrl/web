@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                $("button").click(function (){
+                    $(".test").hide();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h2 class="test">This is a heading</h2>
+        <p class="test">This is a paragraph.</p>
+
+        <p id="test">This is another paragraph</p>
+        <button>Click me</button>
+        <input type="button" value="Назад" onclick="window.location.href = '../index.html'">
+    </body>
+</html>
+
+<!-- В отличие от третьего примера здесь удаляются все элементы, имеющие класс test -->

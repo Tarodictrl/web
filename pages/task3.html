@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                $("#but1").click(function (){
+                    $("#test").hide();
+                });
+                $("#but2").click(function (){
+                    $("#test").show();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h2>This is a heading</h2>
+        <p>This is a paragraph</p>
+        <p id="test">This is another paragraph</p>
+        <button id="but1">Click me</button>
+        <button id="but2">Click me for show</button>
+        <input type="button" value="Назад" onclick="window.location.href = '../index.html'">
+    </body>
+</html>
+
+<!-- В отличие от второго примера здесь была создана ещё одна функция, которая показывает элемент. И привязка функции идет по уникальному идентификатору кнопок -->
