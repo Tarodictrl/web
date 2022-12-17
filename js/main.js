@@ -64,6 +64,7 @@ function SumOfSquares() {
     for (var i = 0; i < ar.length; i++) {
         sum += ar[i] * ar[i];
     }
+    console.log(ar);
     console.log("Sum of squares: " + sum);
 }
 

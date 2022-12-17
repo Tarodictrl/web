@@ -19,6 +19,7 @@ function TimeFromBeginningMonth() {
   var days = Math.floor(diff / (1000 * 60 * 60 * 24));
   var hours = Math.floor(diff / (1000 * 60 * 60));
   var minutes = Math.floor(diff / (1000 * 60));
-  document.getElementById("id_time_from_beginning_month").innerHTML = "Время с начала месяца: " + days + " дней " + hours + " часов " + minutes + " минут ";
+  document.getElementById("id_time_from_beginning_month").innerHTML = 
+  "Время с начала месяца: " + days + " дней " + hours + " часов " + minutes + " минут ";
   setTimeout("TimeFromBeginningMonth()", 1000);
 }
