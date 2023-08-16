@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -9,12 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/dark.css" id="theme-link">
     <link rel="icon" href="assets/logo.ico">
     <title>Tarodictrl</title>
 </head>
 
-<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
@@ -46,45 +47,77 @@
         </div>
     </header>
     <div class="main">
-        <div class="info">
-            <div class="info__logo">
-                <img class="selfy" src="assets/me.jpg" width="100px" height="100px">
-            </div>
-            <div class="info__main">
-                <h1><u>Привет!</u>👋</h1>
-                <p>
-                    👨‍💻Девелопер. Студент
-                    <a href="https://tusur.ru"><b>ТУСУРа</b></a>
-                    <br>
-                    📚Курс:
-                    <b>2</b>
-                    <br>
-                    💣Факультет:
-                    <a
-                        href="https://tusur.ru/ru/o-tusure/struktura-i-organy-upravleniya/departament-obrazovaniya/fakultety-i-kafedry/fakultet-vychislitelnyh-sistem"><b>ФВС</b></a>
-                    <br>
-                    🚬Профиль:
-                    <a
-                        href="https://abiturient.tusur.ru/ru/napravleniya-podgotovki/ochnaya-forma-obucheniya/2022-09-03-01-informatika-i-vychislitelnaya-tehnika-fulltime-c6844de8-a86d-4cc3-bbe8-425c830e21bf#profile_1731"><b>Разработка
-                            ПО</b></a>
-                    <br>
-                    <br>
-                    💻Пишу на
-                    <b>Python</b>,
-                    <b>C#</b> и
-                    <b>C++</b>
-                    <br>
-                    <br>
-                    🎂День рождение:
-                    <b>1 сентября</b>
-                </p>
-            </div>
-            <div class="social">
-                <a href="https://vk.com/dt.danil"><img src="assets/icons/vk.png"></a>
-                <a href="https://t.me/tarodictrl"><img src="assets/icons/telegram.png"></a>
-                <a href="https://github.com/Tarodictrl"><img src="assets/icons/github.png"></a>
-                <a href="https://steamcommunity.com/id/tarodictrl/"><img src="assets/icons/steam.png"></a>
-                <a href="mailto:vudi600@gmail.com"><img src="assets/icons/email.png"></a>
+        <div class="container">
+            <div class="row">
+                <div class="info col">
+                    <div class="info__logo">
+                        <img class="selfy" src="assets/me.jpg" width="100px" height="100px">
+                    </div>
+                    <div class="info__main">
+                        <h1 class="fs-3"><u>Привет!</u>👋</h1>
+                        <p>
+                            👨‍💻Девелопер. Студент
+                            <a href="https://tusur.ru"><b>ТУСУРа</b></a>
+                            <br>
+                            📚Курс:
+                            <b>3</b>
+                            <br>
+                            💣Факультет:
+                            <b>ФВС</b>
+                            <br>
+                            🚬Профиль: <b>Разработка ПО</b>
+                            <br>
+                            <br>
+                            💻Пишу на
+                            <b>Python</b> и
+                            <b>C#</b>
+                            <br>
+                            💵Работаю в <a href="https://realytics.com"><b>Realytics Corp</b></a>
+                            <br>
+                            🎂День рождение:
+                            <b>1 сентября</b>
+                        </p>
+                    </div>
+                    <div class="social">
+                        <a href="https://vk.com/dt.danil"><img src="assets/icons/vk.png"></a>
+                        <a href="https://t.me/tarodictrl"><img src="assets/icons/telegram.png"></a>
+                        <a href="https://github.com/Tarodictrl"><img src="assets/icons/github.png"></a>
+                        <a href="https://steamcommunity.com/id/tarodictrl/"><img src="assets/icons/steam.png"></a>
+                        <a href="mailto:vudi600@gmail.com"><img src="assets/icons/email.png"></a>
+                    </div>
+                </div>
+                <div class="info col ms-5">
+                    <div class="info__main">
+                        <h1 class="fs-3">Мои проекты</h1>
+                        <div role="tabpanel">
+                            <div class="list-group" id="myList" role="tablist">
+                              <a class="list-group-item list-group-item-action active mb-2" data-bs-toggle="list" href="#beautifulTUSUR" role="tab">Beautiful TUSUR</a>
+                              <a class="list-group-item list-group-item-action mb-5" data-bs-toggle="list" href="#steamapi" role="tab">Steam API</a>
+                            </div>
+                          
+                            <div class="tab-content h-100">
+                              <div class="tab-pane active" id="beautifulTUSUR" role="tabpanel">
+                                <img src="https://img.shields.io/github/forks/Weebp-Team/BeautifulTUSUR?style=for-the-badge&label=Forks%E2%98%85&color=%23fffff">
+                                <img src="https://img.shields.io/github/stars/Weebp-Team/BeautifulTUSUR?style=for-the-badge&label=Stars%E2%98%85&color=%230d6efd"/>
+                                <p class="mt-3">
+                                    Проект для улучшения сайта sdo.tusur.ru
+                                    <br>
+                                    Репозиторий: <a class="btn btn-sm btn-primary" href="https://github.com/Weebp-Team/BeautifulTUSUR">Клик</a>
+                                </p>
+                              </div>
+                              <div class="tab-pane" id="steamapi" role="tabpanel">
+                                <img src="https://img.shields.io/github/forks/Weebp-Team/steam_interfaces?style=for-the-badge&label=Forks%E2%98%85&color=%23fffff">
+                                <img src="https://img.shields.io/github/stars/Weebp-Team/steam_interfaces?style=for-the-badge&label=Stars%E2%98%85&color=%230d6efd"/>
+                                <p class="mt-3">
+                                    Проект для работы со Steam API с помощью Python
+                                    <br>
+                                    Репозиторий: <a class="btn btn-sm btn-primary" href="https://github.com/Weebp-Team/steam_interfaces">Клик</a>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
