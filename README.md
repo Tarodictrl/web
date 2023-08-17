@@ -1,1 +1,1 @@
-Site - https://detter.ru/index.html
+Site - https://detter.ru
