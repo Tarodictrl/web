@@ -4,6 +4,17 @@ body {
     line-height: 1.5;
     font-size: 1rem;
     font-weight: 400;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar { 
+    display: none;
+}
+
+h1, p, img, svg, ul, h2, h3, .btn {
+    opacity: 0;
+    animation: ani 0.5s forwards;
 }
 
 #home {
@@ -21,6 +32,11 @@ body {
 
 .main {
     display: block;
+}
+  
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .section {
@@ -104,8 +120,9 @@ img {
 }
 
 .subtitle {
-    color: #53dd6c;
+    color: #6fe056;
     font-size: 1.8em;
+    font-weight: 500;
 }
 
 .text-light-green {
@@ -144,5 +161,9 @@ p, li {
     .skill-card {
         margin: 0px !important;
         width: auto;
+    }
+
+    .arrow-down {
+        opacity: 0;
     }
 }
