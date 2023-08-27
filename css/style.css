@@ -33,7 +33,20 @@ h1, p, img, svg, ul, h2, h3, .btn {
 .main {
     display: block;
 }
-  
+
+.arrow-down {
+    animation: AnimationY 2s alternate infinite;
+}
+
+@keyframes AnimationY {
+    0% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
 @keyframes ani {
     0% {opacity: 0;}
     100% {opacity: 1;}
