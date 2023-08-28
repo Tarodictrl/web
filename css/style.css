@@ -35,7 +35,7 @@ h1, p, img, svg, ul, h2, h3, .btn {
 }
 
 .arrow-down {
-    animation: AnimationY 2s alternate infinite;
+    animation: AnimationY 1.5s alternate infinite;
 }
 
 @keyframes AnimationY {
