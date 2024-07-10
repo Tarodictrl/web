@@ -6,177 +6,129 @@ body {
     font-weight: 400;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    background-color: #191919;
 }
+
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family: ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: transparent
+}
+
 
 body::-webkit-scrollbar { 
     display: none;
 }
 
+ol, li {
+    list-style: none;
+}
+
 h1, p, img, svg, ul, h2, h3, .btn {
-    opacity: 0;
     animation: ani 0.5s forwards;
 }
 
-#home {
-    width: 100%;
-    position: relative;
-    background: url("../assets/background-code.png") no-repeat center;
-    background-size: cover;
-}
-
-.social-icons {
-    position: absolute;
-    bottom: 20px;
-    right: 30px;
+a {
+    text-decoration: none;
 }
 
 .main {
-    display: block;
+    background-color: #2F2F2F;
+    height: 100%;
+    color: white;
+    margin: 2%;
+    margin-right: 5%;
+    padding: 20px;
+    border-radius: 20px;
 }
 
-.arrow-down {
-    animation: AnimationY 1.5s alternate infinite;
+.profession {
+    margin-right: 10px;
+    transition: .2s;
 }
 
-@keyframes AnimationY {
-    0% {
-        transform: translateY(-5px);
-    }
-    100% {
-        transform: translateY(5px);
-    }
+.profession:hover {
+    transform: rotate(10deg);
 }
 
-@keyframes ani {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+.white {
+    color: #ced4da;
 }
 
-.section {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    min-height: 100vh;
+.social {
+    padding-right: 20px;
+    transition: .2s;
 }
 
-img {
-    width: 800px;
+.info-card {
+    border: solid 2px #818181;
+    background-color: #3B3B3B;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: small;
+    margin-top: 20px;
 }
 
-.nav a {
-    padding: 0.5rem 1rem;
+.project, .projects-more {
+    transition: .2s;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #3B3B3B;
+    margin-top: 20px;
 }
 
-.btn {
-    display: inline-block;
-    border: 3px solid #192bc2;
-    color: #192bc2;
-    border-radius: 0px;
-    min-width: 180px;
-    height: auto;
-    transition: all .4s;
-    font-size: 1.2em;
+.project:hover {
+    transform: scale(1.01);
 }
 
-.btn:hover {
-    transform: scale(1.1);
-    background-color: #192bc2;
-    color: #ffffff;
-    border-color: #192bc2;
-}
-
-.text-dark-blue {
-    color: #192bc2;
-}
-
-.section-title {
-    padding-top: 1.8em;
-    font-size: 2.8em;
-    font-weight: 700;
-}
-
-.project-title {
-    font-size: 2.4em;
-    color: #000000;
-}
-
-#skills {
-    background-color: #000122;
-}
-
-.skill-card {
-    padding: 20px 30px;
-    width: 100%;
-    height: auto;
-    box-shadow: 8px 15px 25px rgba(0, 0, 0, .2);
-    background-color: #ffffff;
-}
-
-
-.copyright-text {
-    position: absolute;
-    bottom: 10px;
-    width: auto;
-    left: 30px;
-}
-
-.navbar-brand {
-    font-family: 'Bad Script', cursive;
-    font-size: 2em;
+.project-name {
+    color: white;
     font-weight: bold;
 }
 
-.title {
-    color: #ffffff;
-    font-size: 3.2em;
-    font-weight: 700;
+.project-description {
+    color: #ced4da;
 }
 
-.subtitle {
-    color: #6fe056;
-    font-size: 1.8em;
-    font-weight: 500;
+.project-url {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: .2s;
 }
 
-.text-light-green {
-    color: #53dd6c;
+.project:hover .project-url {
+    color: #93c5fd;
 }
 
-p, li {
-    font-size: 1.3em;
+.social:hover {
+    fill: #93c5fd;
+    transform: scale(1.1);
 }
 
-.row {
-    margin: auto;
+
+.projects-more a {
+    color: white;
 }
 
-#contact {
-    background-color: #192bc2;
+.projects-more:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
-.btn-contact {
-    margin: 30px auto;
-    width: 320px;
-    height: auto;
-    box-shadow: 8px 8px 25px rgba(0, 0, 0, .1);
-    font-weight: 400;
+.projects-more:hover a {
+    color: #93c5fd;
 }
 
-@media screen and (min-width:200px) and (max-width:800px) {
-    body {
-        font-size: 10px;
-    }
-    
-    .title {
-        margin-bottom: 20px;
-    }
+.company {
+    color: #ced4da;
+}
 
-    .skill-card {
-        margin: 0px !important;
-        width: auto;
-    }
-
-    .arrow-down {
-        opacity: 0;
-    }
+.color-gray {
+    color: #ced4da;
 }
