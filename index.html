@@ -1,242 +1,313 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniil Detter — Python / Backend Developer</title>
+    <meta name="description"
+        content="Daniil Detter — Python/Backend developer with 3+ years of experience: FastAPI, PostgreSQL, ClickHouse, Kafka, Kubernetes. Projects, experience, and skills.">
+    <meta property="og:title" content="Daniil Detter — Python / Backend Developer">
+    <meta property="og:description"
+        content="Python/Backend developer with 3+ years of experience: FastAPI, PostgreSQL, ClickHouse, Kafka, Kubernetes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://detter.ru">
+    <meta name="theme-color" content="#0b0f14">
+    <link rel="icon" href="assets/logo.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="assets/logo.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Margarine&display=swap" rel="stylesheet">
-    <title>Daniil Detter</title>
 </head>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-    crossorigin="anonymous"></script>
-
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (m, e, t, r, i, k, a) {
-        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-        m[i].l = 1 * new Date();
-        for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
-        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-    })
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-    ym(90801166, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: true
-    });
-</script>
-<noscript>
-    <div><img src="https://mc.yandex.ru/watch/90801166" style="position:absolute; left:-9999px;" alt="" /></div>
-</noscript>
-<!-- /Yandex.Metrika counter -->
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D6F8WYN1ST"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-D6F8WYN1ST');
-</script>
-
 <body>
-    <div class="main d-flex w-full flex-column">
-        <main class="d-flex flex-column">
-            <div class="d-flex flex-column info">
-                <h1 class="d-flex pb-2">
-                    <div class="profession">Developer, </div>
-                    <div class="profession">Student.</div>
-                </h1>
-                <div class="info-text vw-200 pb-3 white">
-                    Hi, I'am Daniil Detter and i'm a third-year student at TUSUR University, majoring in Software Development at the Faculty of Computer Systems and Control.<br>
-                    Proficient in Python and C#, I work at Realytics Corp to gain practical experience and apply my skills in real-world projects.<br>In summary, I'm dedicated to software development, combining academic learning with hands-on experience at Realytics Corp for a successful career.
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#top">Daniil Detter<span class="accent">.</span></a>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero container">
+            <p class="eyebrow">Hi, my name is</p>
+            <h1>Daniil Detter</h1>
+            <p class="subtitle">Python / Backend Developer</p>
+            <p class="lead">
+                Backend developer with 3+ years of commercial experience building high-load services
+                in Python (FastAPI) — working with PostgreSQL and ClickHouse at the scale of hundreds
+                of millions of records and orchestrating workloads on Kubernetes. Comfortable with
+                message queues, CDC replication, SQL optimization, and CI/CD; an active user of AI
+                development tools. B.Sc. in Computer Science from TUSUR (2025).
+            </p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="https://github.com/tarodictrl" target="_blank" rel="noopener">
+                    View my GitHub
+                </a>
+                <a class="btn btn-ghost" href="https://t.me/tarodictrl" target="_blank" rel="noopener">
+                    Get in touch
+                </a>
+            </div>
+        </section>
+
+        <section id="projects" class="container section">
+            <h2 class="section-title"><span class="section-index">01.</span> Projects</h2>
+            <div class="project-grid">
+                <a class="project-card" href="https://github.com/Tarodictrl/vk-ios-notifications" target="_blank"
+                    rel="noopener">
+                    <div class="project-top">
+                        <svg class="icon-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path
+                                d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" />
+                        </svg>
+                        <svg class="icon-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M7 17 17 7M17 7H8M17 7v9" />
+                        </svg>
+                    </div>
+                    <h3>VK iOS Notifications</h3>
+                    <p>
+                        Forwards new VK messages to iOS push notifications via Bark: listens to the
+                        VK Long Poll API, adds sender names and avatars, and handles network
+                        failures with exponential backoff.
+                    </p>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>VK Long Poll API</li>
+                        <li>Docker</li>
+                    </ul>
+                </a>
+                <a class="project-card" href="https://github.com/Tarodictrl/anininja_backend" target="_blank"
+                    rel="noopener">
+                    <div class="project-top">
+                        <svg class="icon-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path
+                                d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" />
+                        </svg>
+                        <svg class="icon-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M7 17 17 7M17 7H8M17 7v9" />
+                        </svg>
+                    </div>
+                    <h3>AniNinja Backend</h3>
+                    <p>
+                        Backend API for AniNinja — a free anime-streaming website. Built with
+                        FastAPI and shipped in Docker.
+                    </p>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>FastAPI</li>
+                        <li>Docker</li>
+                    </ul>
+                </a>
+                <a class="project-card" href="https://github.com/Tarodictrl/tood_backend" target="_blank"
+                    rel="noopener">
+                    <div class="project-top">
+                        <svg class="icon-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path
+                                d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" />
+                        </svg>
+                        <svg class="icon-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M7 17 17 7M17 7H8M17 7v9" />
+                        </svg>
+                    </div>
+                    <h3>Tood Backend</h3>
+                    <p>
+                        Backend for Tood — a full-stack task manager built as a graduation thesis
+                        project. FastAPI, PostgreSQL, and JWT authentication.
+                    </p>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>FastAPI</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </a>
+                <a class="project-card" href="https://github.com/Tarodictrl/steam_interfaces" target="_blank"
+                    rel="noopener">
+                    <div class="project-top">
+                        <svg class="icon-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path
+                                d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" />
+                        </svg>
+                        <svg class="icon-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M7 17 17 7M17 7H8M17 7v9" />
+                        </svg>
+                    </div>
+                    <h3>Steam Interfaces</h3>
+                    <p>
+                        A Python library for the Steam Web API. Provides convenient access to games,
+                        user profiles, achievements, store data, and other Steam platform features.
+                    </p>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>Steam Web API</li>
+                    </ul>
+                </a>
+            </div>
+            <div class="more-row">
+                <a class="btn btn-ghost" href="https://github.com/Tarodictrl?tab=repositories" target="_blank"
+                    rel="noopener">
+                    View more on GitHub
+                </a>
+            </div>
+        </section>
+
+        <section id="experience" class="container section">
+            <h2 class="section-title"><span class="section-index">02.</span> Experience</h2>
+            <div class="xp-card">
+                <div class="xp-head">
+                    <h3>Backend Developer · <span class="accent">Realytics</span></h3>
+                    <p class="xp-dates">December 2022 — Present</p>
                 </div>
-                <div class="info-socials">
-                    <a href="https://github.com/tarodictrl" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="social" height="1.3em" fill="rgb(161 161 170)" viewBox="0 0 512 512">
-                            <path d="M 198.22774327122153 332.85300207039336 Q 198.22774327122153 350.8737060041408 188.68737060041408 369.9544513457557 L 188.68737060041408 369.9544513457557 L 188.68737060041408 369.9544513457557 Q 180.20703933747413 389.0351966873706 159.0062111801242 391.1552795031056 Q 138.8654244306418 389.0351966873706 129.32505175983437 369.9544513457557 Q 120.84472049689441 350.8737060041408 120.84472049689441 332.85300207039336 Q 120.84472049689441 314.832298136646 129.32505175983437 294.6915113871636 Q 138.8654244306418 275.61076604554864 159.0062111801242 274.5507246376812 Q 180.20703933747413 275.61076604554864 188.68737060041408 294.6915113871636 Q 198.22774327122153 314.832298136646 198.22774327122153 332.85300207039336 L 198.22774327122153 332.85300207039336 Z M 509.879917184265 278.79089026915113 Q 512 331.7929606625259 491.8592132505176 379.49482401656314 Q 470.6583850931677 418.71635610766043 433.55693581780537 435.6770186335404 Q 395.3954451345756 452.6376811594203 350.8737060041408 455.8178053830228 Q 307.4120082815735 460.05797101449275 267.1304347826087 458.99792960662523 Q 263.9503105590062 458.99792960662523 261.8302277432712 458.99792960662523 Q 257.5900621118012 458.99792960662523 253.34989648033127 458.99792960662523 Q 213.06832298136646 460.05797101449275 167.4865424430642 455.8178053830228 Q 121.9047619047619 452.6376811594203 82.6832298136646 435.6770186335404 Q 43.46169772256729 418.71635610766043 22.26086956521739 379.49482401656314 Q 0 331.7929606625259 1.060041407867495 278.79089026915113 Q 1.060041407867495 210.94824016563146 44.52173913043478 159.0062111801242 Q 37.10144927536232 133.56521739130434 37.10144927536232 107.06418219461698 Q 37.10144927536232 90.10351966873706 40.2815734989648 78.44306418219462 Q 44.52173913043478 66.78260869565217 51.94202898550725 51.94202898550725 Q 87.98343685300208 51.94202898550725 114.48447204968944 60.422360248447205 Q 140.9855072463768 68.90269151138716 167.4865424430642 90.10351966873706 Q 214.12836438923395 79.5031055900621 261.8302277432712 79.5031055900621 Q 305.2919254658385 79.5031055900621 346.6335403726708 89.04347826086956 Q 373.13457556935816 67.84265010351967 399.63561076604555 60.422360248447205 Q 426.1366459627329 51.94202898550725 461.11801242236027 51.94202898550725 Q 468.5383022774327 66.78260869565217 472.7784679089027 78.44306418219462 Q 477.01863354037266 90.10351966873706 477.01863354037266 107.06418219461698 Q 477.01863354037266 133.56521739130434 468.5383022774327 157.94616977225672 Q 510.9399585921325 210.94824016563146 509.879917184265 278.79089026915113 L 509.879917184265 278.79089026915113 Z M 442.0372670807453 332.85300207039336 Q 440.97722567287786 296.81159420289856 421.8964803312629 271.3706004140787 L 421.8964803312629 271.3706004140787 L 421.8964803312629 271.3706004140787 Q 401.7556935817805 245.9296066252588 363.59420289855075 244.8695652173913 Q 340.27329192546586 245.9296066252588 316.95238095238096 249.1097308488613 Q 310.592132505176 250.16977225672878 304.231884057971 251.22981366459626 Q 280.9109730848861 254.40993788819875 256.53002070393376 254.40993788819875 Q 232.14906832298138 254.40993788819875 208.8281573498965 251.22981366459626 Q 202.4679089026915 250.16977225672878 197.16770186335404 250.16977225672878 Q 173.84679089026915 245.9296066252588 149.46583850931677 244.8695652173913 Q 112.36438923395445 245.9296066252588 92.22360248447205 271.3706004140787 Q 72.08281573498965 296.81159420289856 72.08281573498965 332.85300207039336 Q 72.08281573498965 378.4347826086956 96.46376811594203 401.7556935817805 Q 120.84472049689441 425.0766045548654 156.88612836438924 432.4968944099379 Q 192.92753623188406 440.97722567287786 231.08902691511386 439.91718426501035 L 281.9710144927536 439.91718426501035 L 281.9710144927536 439.91718426501035 Q 320.13250517598345 440.97722567287786 356.17391304347825 432.4968944099379 Q 393.27536231884056 425.0766045548654 416.59627329192546 401.7556935817805 Q 440.97722567287786 378.4347826086956 442.0372670807453 332.85300207039336 L 442.0372670807453 332.85300207039336 Z M 354.0538302277433 274.5507246376812 Q 333.9130434782609 275.61076604554864 324.3726708074534 294.6915113871636 L 324.3726708074534 294.6915113871636 L 324.3726708074534 294.6915113871636 Q 314.832298136646 314.832298136646 314.832298136646 332.85300207039336 Q 314.832298136646 350.8737060041408 324.3726708074534 369.9544513457557 Q 333.9130434782609 389.0351966873706 354.0538302277433 391.1552795031056 Q 374.1946169772257 389.0351966873706 383.73498964803315 369.9544513457557 Q 393.27536231884056 350.8737060041408 393.27536231884056 332.85300207039336 Q 393.27536231884056 314.832298136646 383.73498964803315 294.6915113871636 Q 374.1946169772257 275.61076604554864 354.0538302277433 274.5507246376812 L 354.0538302277433 274.5507246376812 Z" />
-                        </svg>
-                    </a>
-                    <a href="https://t.me/tarodictrl" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="social" height="1.3em" fill="rgb(161 161 170)" viewBox="0 0 512 512">
-                            <path d="M 256 0 Q 184.7741935483871 1.032258064516129 126.96774193548387 35.096774193548384 L 126.96774193548387 35.096774193548384 L 126.96774193548387 35.096774193548384 Q 69.16129032258064 69.16129032258064 35.096774193548384 126.96774193548387 L 35.096774193548384 126.96774193548387 L 35.096774193548384 126.96774193548387 Q 1.032258064516129 184.7741935483871 0 256 Q 1.032258064516129 327.2258064516129 35.096774193548384 385.03225806451616 Q 69.16129032258064 442.83870967741933 126.96774193548387 476.9032258064516 Q 184.7741935483871 510.96774193548384 256 512 Q 327.2258064516129 510.96774193548384 385.03225806451616 476.9032258064516 Q 442.83870967741933 442.83870967741933 476.9032258064516 385.03225806451616 Q 510.96774193548384 327.2258064516129 512 256 Q 510.96774193548384 184.7741935483871 476.9032258064516 126.96774193548387 Q 442.83870967741933 69.16129032258064 385.03225806451616 35.096774193548384 Q 327.2258064516129 1.032258064516129 256 0 L 256 0 Z M 374.7096774193548 174.4516129032258 Q 372.64516129032256 195.09677419354838 367.48387096774195 230.19354838709677 L 367.48387096774195 230.19354838709677 L 367.48387096774195 230.19354838709677 Q 362.3225806451613 264.258064516129 356.1290322580645 299.35483870967744 L 356.1290322580645 299.35483870967744 L 356.1290322580645 299.35483870967744 Q 349.93548387096774 334.4516129032258 345.80645161290323 358.19354838709677 Q 339.61290322580646 385.03225806451616 328.258064516129 384 Q 311.741935483871 384 296.258064516129 371.61290322580646 Q 292.1290322580645 368.51612903225805 288 365.4193548387097 Q 270.4516129032258 354.06451612903226 258.06451612903226 344.7741935483871 Q 245.67741935483872 336.51612903225805 230.19354838709677 327.2258064516129 Q 214.70967741935485 315.8709677419355 217.80645161290323 308.64516129032256 Q 219.8709677419355 300.38709677419354 230.19354838709677 292.1290322580645 Q 233.29032258064515 289.03225806451616 236.38709677419354 285.93548387096774 Q 237.41935483870967 283.8709677419355 247.74193548387098 275.61290322580646 Q 264.258064516129 260.1290322580645 283.8709677419355 240.51612903225808 Q 304.51612903225805 221.93548387096774 306.5806451612903 216.7741935483871 Q 307.61290322580646 215.74193548387098 305.5483870967742 212.6451612903226 Q 302.4516129032258 210.58064516129033 300.38709677419354 211.61290322580646 Q 296.258064516129 212.6451612903226 192 283.8709677419355 Q 176.51612903225808 294.19354838709677 164.1290322580645 293.16129032258067 Q 156.90322580645162 293.16129032258067 145.5483870967742 290.06451612903226 Q 134.19354838709677 288 124.90322580645162 283.8709677419355 Q 121.80645161290323 282.83870967741933 118.70967741935483 282.83870967741933 Q 97.03225806451613 277.6774193548387 97.03225806451613 267.35483870967744 Q 98.06451612903226 260.1290322580645 115.61290322580645 252.90322580645162 Q 228.1290322580645 204.38709677419354 265.2903225806452 188.90322580645162 Q 316.9032258064516 167.2258064516129 335.48387096774195 161.03225806451613 Q 355.0967741935484 153.80645161290323 360.258064516129 153.80645161290323 Q 365.4193548387097 153.80645161290323 370.5806451612903 156.90322580645162 Q 373.6774193548387 160 374.7096774193548 164.1290322580645 Q 374.7096774193548 169.29032258064515 374.7096774193548 174.4516129032258 L 374.7096774193548 174.4516129032258 Z" />
-                        </svg>
-                    </a>
-                    <a href="https://vk.com/dt.danil" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="social" height="1.3em" fill="rgb(161 161 170)" viewBox="0 0 512 512">
-                            <path d="M 36.40888888888889 36.40888888888889 Q 11.377777777777778 62.577777777777776 5.688888888888889 111.50222222222222 L 5.688888888888889 111.50222222222222 L 5.688888888888889 111.50222222222222 Q 0 160.42666666666668 1.1377777777777778 245.76 L 1.1377777777777778 266.24 L 1.1377777777777778 266.24 Q 0 351.5733333333333 5.688888888888889 400.4977777777778 Q 11.377777777777778 449.4222222222222 36.40888888888889 475.5911111111111 Q 62.577777777777776 500.6222222222222 111.50222222222222 506.31111111111113 Q 160.42666666666668 512 245.76 510.8622222222222 L 266.24 510.8622222222222 L 266.24 510.8622222222222 Q 351.5733333333333 512 400.4977777777778 506.31111111111113 Q 449.4222222222222 500.6222222222222 475.5911111111111 475.5911111111111 Q 500.6222222222222 449.4222222222222 506.31111111111113 400.4977777777778 Q 512 351.5733333333333 510.8622222222222 266.24 L 510.8622222222222 245.76 L 510.8622222222222 245.76 Q 512 160.42666666666668 506.31111111111113 111.50222222222222 Q 500.6222222222222 62.577777777777776 475.5911111111111 36.40888888888889 Q 449.4222222222222 11.377777777777778 400.4977777777778 5.688888888888889 Q 351.5733333333333 0 266.24 1.1377777777777778 L 245.76 1.1377777777777778 L 245.76 1.1377777777777778 Q 160.42666666666668 0 111.50222222222222 5.688888888888889 Q 62.577777777777776 11.377777777777778 36.40888888888889 36.40888888888889 L 36.40888888888889 36.40888888888889 Z M 87.60888888888888 155.87555555555556 L 145.63555555555556 155.87555555555556 L 87.60888888888888 155.87555555555556 L 145.63555555555556 155.87555555555556 Q 147.9111111111111 228.69333333333333 172.94222222222223 262.82666666666665 Q 196.83555555555554 296.96 224.14222222222222 302.6488888888889 L 224.14222222222222 155.87555555555556 L 224.14222222222222 155.87555555555556 L 278.75555555555553 155.87555555555556 L 278.75555555555553 155.87555555555556 L 278.75555555555553 240.07111111111112 L 278.75555555555553 240.07111111111112 Q 304.9244444444444 236.65777777777777 327.68 212.76444444444445 Q 350.43555555555554 188.8711111111111 359.53777777777776 155.87555555555556 L 414.1511111111111 155.87555555555556 L 414.1511111111111 155.87555555555556 Q 407.32444444444445 188.8711111111111 387.9822222222222 217.31555555555556 Q 368.64 244.62222222222223 340.19555555555553 261.68888888888887 Q 372.05333333333334 277.6177777777778 394.8088888888889 306.0622222222222 Q 417.56444444444446 333.3688888888889 426.6666666666667 368.64 L 366.3644444444444 368.64 L 366.3644444444444 368.64 Q 358.4 337.92 334.50666666666666 317.44 Q 310.61333333333334 296.96 278.75555555555553 292.4088888888889 L 278.75555555555553 368.64 L 278.75555555555553 368.64 L 271.9288888888889 368.64 L 271.9288888888889 368.64 Q 184.32 367.5022222222222 137.67111111111112 311.75111111111113 Q 89.88444444444444 256 87.60888888888888 155.87555555555556 L 87.60888888888888 155.87555555555556 Z" />
-                        </svg>
-                    </a>
+                <p>
+                    Building and maintaining high-load backend services: a FastAPI REST API with
+                    66 endpoints and 86% test coverage, 26 production microservices on Kubernetes
+                    (Helm), CDC streaming with Debezium/Kafka, and an Airflow orchestration
+                    of ~1,900 DAGs.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="container section">
+            <h2 class="section-title"><span class="section-index">03.</span> Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>C#</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Backend</h3>
+                    <ul class="tags">
+                        <li>FastAPI</li>
+                        <li>REST API</li>
+                        <li>GraphQL</li>
+                        <li>Microservice architecture</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Databases</h3>
+                    <ul class="tags">
+                        <li>PostgreSQL</li>
+                        <li>ClickHouse</li>
+                        <li>Indexing</li>
+                        <li>Query optimization</li>
+                        <li>Sharding</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Queues / CDC</h3>
+                    <ul class="tags">
+                        <li>Apache Kafka</li>
+                        <li>RabbitMQ</li>
+                        <li>Celery</li>
+                        <li>Debezium</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>DevOps</h3>
+                    <ul class="tags">
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Helm</li>
+                        <li>CI/CD (GitHub Actions)</li>
+                        <li>Airflow</li>
+                        <li>Linux</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Tools</h3>
+                    <ul class="tags">
+                        <li>Poetry</li>
+                        <li>Pytest</li>
+                        <li>LLM / AI agents (Claude, Cursor)</li>
+                    </ul>
                 </div>
             </div>
-            <div class="d-flex row mt-5">
-                <div class="d-flex flex-column col projects">
-                    <h2 class="d-flex">
-                        My projects
-                    </h2>
-                    <div class="d-flex project">
-                        <a href="https://github.com/Weebp-Team/steam_interfaces" target="_blank">
-                            <span class="project-name">
-                                Steam API
-                            </span>
-                            <p class="project-description">
-                                This project is a Python library designed for working with the Steam API.
-                                The Steam API provides developers with access to various features and data related to the Steam platform, such as games, users, achievements, the store, and much more.
-                            </p>
-                            <span class="project-url">
-                                <svg viewBox="0 0 24 24" height="30px" aria-hidden="true"><path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path></svg>
-                                github.com/Weebp-Team/steam_interfaces
-                            </span>
-                        </a>
-                    </div>
-                    <div class="d-flex project">
-                        <a href="https://github.com/Weebp-Team/steam_interfaces" target="_blank">
-                            <span class="project-name">
-                                Tusur API
-                            </span>
-                            <p class="project-description">
-                                The project you're describing seems to be a Python library designed to interact with the TUSUR website.
-                                This library likely provides functionality to retrieve messages, notifications, user grades, and group schedules from sdo.tusur.ru.
-                            </p>
-                            <span class="project-url">
-                                <svg viewBox="0 0 24 24" height="30px" aria-hidden="true"><path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path></svg>
-                                github.com/Weebp-Team/python-tusur
-                            </span>
-                        </a>
-                    </div>
-                    <div class="d-flex project">
-                        <a href="https://github.com/Weebp-Team/BeautifulTUSUR" target="_blank">
-                            <span class="project-name">
-                                Beautiful TUSUR
-                            </span>
-                            <p class="project-description">
-                                The plugin you're describing is a browser extension designed to enhance the user experience on the TUSUR website.
-                            </p>
-                            <span class="project-url">
-                                <svg viewBox="0 0 24 24" height="30px" aria-hidden="true"><path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path></svg>
-                                github.com/Weebp-Team/BeautifulTUSUR
-                            </span>
-                        </a>
-                    </div>
-                    <div class="d-flex projects-more justify-content-center px-5 align-self-center">
-                        <a href="https://github.com/Tarodictrl?tab=repositories" target="_blank">
-                            View more
-                        </a>
-                    </div>
-                </div>
-                <div class="d-flex col-auto flex-column mt-5">
-                    <div class="info-card flex-fill">
-                        <h2 class="d-flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="align-self-center" height="0.5em" fill="white" viewBox="0 0 512 512">
-                                <path d="M 144 56 L 144 112 L 144 56 L 144 112 L 368 112 L 368 112 L 368 56 L 368 56 Q 366 34 344 32 L 168 32 L 168 32 Q 146 34 144 56 L 144 56 Z M 128 112 L 128 56 L 128 112 L 128 56 Q 128 39 140 28 Q 151 16 168 16 L 344 16 L 344 16 Q 361 16 372 28 Q 384 39 384 56 L 384 112 L 384 112 L 448 112 L 448 112 Q 475 113 493 131 Q 511 149 512 176 L 512 280 L 512 280 L 512 432 L 512 432 Q 511 459 493 477 Q 475 495 448 496 L 64 496 L 64 496 Q 37 495 19 477 Q 1 459 0 432 L 0 280 L 0 280 L 0 176 L 0 176 Q 1 149 19 131 Q 37 113 64 112 L 128 112 L 128 112 Z M 16 288 L 16 432 L 16 288 L 16 432 Q 17 452 30 466 Q 44 479 64 480 L 448 480 L 448 480 Q 468 479 482 466 Q 495 452 496 432 L 496 288 L 496 288 L 336 288 L 336 288 L 336 336 L 336 336 Q 336 350 327 359 Q 318 368 304 368 L 208 368 L 208 368 Q 194 368 185 359 Q 176 350 176 336 L 176 288 L 176 288 L 16 288 L 16 288 Z M 176 272 L 192 272 L 176 272 L 496 272 L 496 176 L 496 176 Q 495 156 482 142 Q 468 129 448 128 L 376 128 L 64 128 Q 44 129 30 142 Q 17 156 16 176 L 16 272 L 16 272 L 176 272 L 176 272 Z M 192 288 L 192 336 L 192 288 L 192 336 Q 193 351 208 352 L 304 352 L 304 352 Q 319 351 320 336 L 320 288 L 320 288 L 192 288 L 192 288 Z" />
-                            </svg>
-                            <span class="fs-5 px-2">Work</span>
-                        </h2>
-                        <ol class="d-flex mt-3 p-0">
-                            <li class="d-flex company">
-                                <div class="d-flex company-image">
-                                    <svg class="align-self-center" width="29" height="29" xmlns="http://www.w3.org/2000/svg"><path d="M10.34 21.05v.02l.02.02.05.16 2.21 7.1c.04.1.05.15.08.18.03.04.06.06.1.08l.2.01h3.1c.18 0 .27 0 .33-.04a.25.25 0 0 0 .1-.14c.02-.08 0-.17-.06-.35l-2.44-7.8c-.03-.12-.05-.18-.05-.24 0-.04.03-.08.05-.12.04-.05.1-.08.2-.14a9.96 9.96 0 0 0 4.93-6.73c1.13-5.41-2.2-10.74-7.44-11.9A9.7 9.7 0 0 0 .2 8.83c-.58 2.76.4 5.58 2 7.8l.04.05.04.02.07.01h3.68c.88 0 1.32 0 1.36-.04.04-.03.05-.06.04-.11-.01-.05-.4-.35-1.16-.94A5.86 5.86 0 0 1 4 10.97c0-3.2 2.52-5.8 5.62-5.8s5.62 2.6 5.62 5.8a5.72 5.72 0 0 1-5.88 5.8c-.1 0-.16 0-.19.02a.12.12 0 0 0-.05.07c-.02.04 0 .09.03.19l1.2 4Z" fill="#fff"></path></svg>
-                                </div>
-                                <dl class="d-flex flex-column">
-                                    <dd class="fw-bold m-0 text-white">
-                                        Realytics
-                                    </dd>
-                                    <div class="row">
-                                        <dd class="m-0 col-auto">
-                                            Python Developer
-                                        </dd>
-                                        <dd class="m-0 col-auto">
-                                            December 2022 — Present
-                                        </dd>
-                                    </div>
-                                </dl>
-                            </li>
-                        </ol>
-                    </div>
-                    <div class="d-flex flex-column info-card">
-                        <h2 class="d-flex m-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="align-self-center" height="0.5em" fill="currentColor" viewBox="0 0 512 512">
-                                <path d="M 512 36.57142857142857 Q 512 20.571428571428573 501.7142857142857 10.285714285714286 L 501.7142857142857 10.285714285714286 L 501.7142857142857 10.285714285714286 Q 491.42857142857144 0 475.42857142857144 0 L 36.57142857142857 0 L 36.57142857142857 0 Q 20.571428571428573 0 10.285714285714286 10.285714285714286 Q 0 20.571428571428573 0 36.57142857142857 Q 0 52.57142857142857 10.285714285714286 62.857142857142854 Q 20.571428571428573 73.14285714285714 36.57142857142857 73.14285714285714 L 475.42857142857144 73.14285714285714 L 475.42857142857144 73.14285714285714 Q 491.42857142857144 73.14285714285714 501.7142857142857 62.857142857142854 Q 512 52.57142857142857 512 36.57142857142857 L 512 36.57142857142857 Z M 512 329.14285714285717 Q 512 313.14285714285717 501.7142857142857 302.85714285714283 L 501.7142857142857 302.85714285714283 L 501.7142857142857 302.85714285714283 Q 491.42857142857144 292.57142857142856 475.42857142857144 292.57142857142856 L 36.57142857142857 292.57142857142856 L 36.57142857142857 292.57142857142856 Q 20.571428571428573 292.57142857142856 10.285714285714286 302.85714285714283 Q 0 313.14285714285717 0 329.14285714285717 Q 0 345.14285714285717 10.285714285714286 355.42857142857144 Q 20.571428571428573 365.7142857142857 36.57142857142857 365.7142857142857 L 475.42857142857144 365.7142857142857 L 475.42857142857144 365.7142857142857 Q 491.42857142857144 365.7142857142857 501.7142857142857 355.42857142857144 Q 512 345.14285714285717 512 329.14285714285717 L 512 329.14285714285717 Z M 0 182.85714285714286 Q 0 198.85714285714286 10.285714285714286 209.14285714285714 L 10.285714285714286 209.14285714285714 L 10.285714285714286 209.14285714285714 Q 20.571428571428573 219.42857142857142 36.57142857142857 219.42857142857142 L 475.42857142857144 219.42857142857142 L 475.42857142857144 219.42857142857142 Q 491.42857142857144 219.42857142857142 501.7142857142857 209.14285714285714 Q 512 198.85714285714286 512 182.85714285714286 Q 512 166.85714285714286 501.7142857142857 156.57142857142858 Q 491.42857142857144 146.28571428571428 475.42857142857144 146.28571428571428 L 36.57142857142857 146.28571428571428 L 36.57142857142857 146.28571428571428 Q 20.571428571428573 146.28571428571428 10.285714285714286 156.57142857142858 Q 0 166.85714285714286 0 182.85714285714286 L 0 182.85714285714286 Z M 512 475.42857142857144 Q 512 459.42857142857144 501.7142857142857 449.14285714285717 L 501.7142857142857 449.14285714285717 L 501.7142857142857 449.14285714285717 Q 491.42857142857144 438.85714285714283 475.42857142857144 438.85714285714283 L 36.57142857142857 438.85714285714283 L 36.57142857142857 438.85714285714283 Q 20.571428571428573 438.85714285714283 10.285714285714286 449.14285714285717 Q 0 459.42857142857144 0 475.42857142857144 Q 0 491.42857142857144 10.285714285714286 501.7142857142857 Q 20.571428571428573 512 36.57142857142857 512 L 475.42857142857144 512 L 475.42857142857144 512 Q 491.42857142857144 512 501.7142857142857 501.7142857142857 Q 512 491.42857142857144 512 475.42857142857144 L 512 475.42857142857144 Z" />
-                            </svg>
-                            <span class="fs-5 px-2">Skills</span>
-                        </h2>
-                        <ol class="d-flex-column mt-3 p-0">
-                            <li class="d-flex flex-column p-1">
-                                <p class="p-0 m-0 fw-bold fs-6">Front End</p>
-                                <ol class="color-gray">
-                                    <li>
-                                        Javascript
-                                    </li>
-                                    <li>
-                                        HTML5
-                                    </li>
-                                    <li>
-                                        CSS3
-                                    </li>
-                                    <li>
-                                        Bootstrap
-                                    </li>
-                                </ol>
-                            </li>
-                            <li class="d-flex flex-column p-1">
-                                <p class="p-0 m-0 fw-bold fs-6">Back End</p>
-                                <ol class="color-gray">
-                                    <li>
-                                        PostgreSQL / ClickHouse / Redis
-                                    </li>
-                                    <li>
-                                        PHP
-                                    </li>
-                                    <li>
-                                        Nginx
-                                    </li>
-                                    <li>
-                                        PYTHON
-                                    </li>
-                                    <li>
-                                        FastAPI
-                                    </li>
-                                    <li>
-                                        RabbitMQ
-                                    </li>
-                                </ol>
-                            </li>
-                            <li class="d-flex flex-column p-1">
-                                <p class="p-0 m-0 fw-bold fs-6">Developer Tool Kit</p>
-                                <ol class="color-gray">
-                                    <li>
-                                        Git (Git Flow)
-                                    </li>
-                                    <li>
-                                        GitHub
-                                    </li>
-                                    <li>
-                                        Visual Studio Code
-                                    </li>
-                                </ol>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer class="d-flex flex-wrap justify-content-center py-3 my-4 border-top">
-            <div>
-                Copyright © 2024 Daniil Detter
-            </div>
-        </footer>
-    </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="container footer-inner">
+            <ul class="socials">
+                <li>
+                    <a href="https://github.com/tarodictrl" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/tarodictrl" target="_blank" rel="noopener" aria-label="Telegram">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/daniil-detter-66a272321/" target="_blank" rel="noopener"
+                        aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://vk.com/dt.danil" target="_blank" rel="noopener" aria-label="VK">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.847 2.46 2.27 4.61 2.856 4.61.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.27-1.422 2.18-3.606 2.18-3.606.119-.254.322-.491.762-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.049.17.49-.085.744-.576.744z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <p>© 2026 Daniil Detter</p>
+        </div>
+    </footer>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(90801166, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/90801166" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6F8WYN1ST"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D6F8WYN1ST');
+    </script>
 </body>
 </html>
